@@ -400,3 +400,25 @@ input[type=text], input[type=email], textarea {
 {
   display: none;
 }
+
+footer{
+  width: 100%;
+  background-color: $color-3;
+  color : $color-x;
+}
+
+footer a{
+  color : $color-x;
+}
+
+.footer-icon{
+  font-size: 2rem;
+  margin: 1rem;
+  border: 2px solid $color-x;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+}
+
+.footer-icon:hover{
+  border-style: dotted;
+}
