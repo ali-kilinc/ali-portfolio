@@ -5,7 +5,7 @@ h2, .sub-h2, #currentFocusTitle {
 
 /* #endregion */
 /* shadowed items */
-img, .card-skill {
+img, .card-experience {
   -webkit-box-shadow: 2px 2px 5px 0px #52616b;
   -moz-box-shadow: 2px 2px 5px 0px #52616b;
   box-shadow: 2px 2px 5px 0px #52616b;
@@ -333,8 +333,41 @@ a:hover {
   cursor: pointer;
 }
 
-.card-skill {
+.card-experience {
   color: #52616b;
   background-color: #f0f5f9;
-  margin: 2rem 0 4rem 0;
+  margin: 2rem 0;
+}
+
+.card-header {
+  background-color: #e2ae48;
+  color: #1e2022;
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #f0f5f9;
+  color: #52616b;
+}
+
+#subject-input {
+  height: 200px;
+}
+
+.btn-send {
+  color: #52616b;
+  background-color: #f0f5f9;
+  border-color: #52616b;
+}
+
+#contact-success-message,
+#contact-error-message {
+  display: none;
 }

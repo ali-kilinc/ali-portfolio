@@ -347,8 +347,7 @@ a:hover
   }  
 }
 
-#popupClose
-{
+#popupClose{
   float: right;
   margin-right: -30px;
   background-color: white;
@@ -357,15 +356,47 @@ a:hover
   margin-top: -15px;
 }
 
-#popupClose:hover
-{
+#popupClose:hover{
   cursor: pointer;
 }
 
-.card-skill
-{
+.card-experience{
   @extend %shadowed;
   color:$color-3;
   background-color: $color-1;
-  margin : 2rem 0 4rem 0;
+  margin : 2rem 0;
+}
+
+.card-header{
+  background-color: $color-x;
+  color:$color-4;
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color:$color-1;
+  color : $color-3;
+}
+
+#subject-input{
+  height: 200px;
+}
+
+.btn-send{
+    color: $color-3;
+    background-color: $color-1;
+    border-color: $color-3;
+}
+
+#contact-success-message,
+#contact-error-message
+{
+  display: none;
 }
