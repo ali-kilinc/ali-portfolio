@@ -1,3 +1,13 @@
+var player;
+
+function StopVideo()
+{
+    console.log("Stop Video called");
+    if(player && player.getPlayerState() == 1){
+        player.stopVideo();
+    }
+}
+
 $(document).ready(function () {
 
     let navSize = parseInt($("#mainNav").css("height"), 10);
@@ -9,7 +19,7 @@ $(document).ready(function () {
         link: "https://play.google.com/store/apps/details?id=com.tuktuk.outbreak",
         carouselItems: [
 
-            '<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TD9HORgvo_w"></iframe></div>',
+            '<div class="embed-responsive embed-responsive-16by9"><iframe id="outbreak-iframe" class="embed-responsive-item" src="https://www.youtube.com/embed/TD9HORgvo_w?enablejsapi=1"></iframe></div>',
             '<img src="https://lh3.googleusercontent.com/VoJNXO9rQ0dRy1GSMhmoKNyKSWjtmVqkqpiLE_oYNFXBHGHxnpGD0je8tdZsdXdznJw=w1064-h969-rw" alt="">',
             '<img src="https://lh3.googleusercontent.com/H4H2v_g1OU85TCB_hrKWOvtkpzOGVk0vT-O2KZrsuYpXUA8xHZ6BQalSDUn9Cotgcjk=w1920-h969-rw" alt="">'
         ]
@@ -20,7 +30,7 @@ $(document).ready(function () {
         title: "Yelp Camp",
         explanation: 'A full-stack Node.js web application project from the Udemy course - <a class="a-dark" target="_blank" href="https://www.udemy.com/the-web-developer-bootcamp/" rel="nofollow">The Web Developer Bootcamp by Colt Steele</a>',
         linkText: "View Site",
-        link: "#",
+        link: "http://yelpcamp.kilinc.me",
         carouselItems: [
             '<img src="./assets/imgs/yelpCamp1.png">',
             '<img src="./assets/imgs/yelpCamp2.png">',
@@ -71,8 +81,14 @@ $(document).ready(function () {
     });
 
     $("#learnMoreOutbreak").on("click", function () {
+        
         $("#overlay").load("../../projectDetails.html", function () {
             populateProjectDetails(projectOutbreak);
+            player = new YT.Player('outbreak-iframe');
+
+            $('#carouselProjectMaterials').on('slide.bs.carousel', function () {
+                StopVideo();
+            });
         });
 
         $("#overlay").slideDown();
@@ -98,11 +114,13 @@ $(document).ready(function () {
 
         if (!$(event.target).closest('#popup').length) {
             $("#overlay").slideUp();
+            StopVideo();
         }
     });
 
     $("#overlay").on("click", "#popupClose", function () {
         $("#overlay").slideUp();
+        StopVideo();
     });
 
     function populateProjectDetails(project) {
