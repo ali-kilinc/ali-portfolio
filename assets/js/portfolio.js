@@ -32,9 +32,9 @@ $(document).ready(function () {
         linkText: "View Site",
         link: "http://yelpcamp.kilinc.me",
         carouselItems: [
-            '<img src="./assets/imgs/yelpCamp1.png">',
-            '<img src="./assets/imgs/yelpCamp2.png">',
-            '<img src="./assets/imgs/yelpCamp3.png">'
+            '<img src="./assets/imgs/yelpCamp1.jpg">',
+            '<img src="./assets/imgs/yelpCamp2.jpg">',
+            '<img src="./assets/imgs/yelpCamp3.jpg">'
         ]
     };
 
