@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    let navSize = parseInt($("#mainNav").css("height"), 10);
+
     let projectOutbreak = {
         title: "The Outbreak",
         explanation: "2D Android Mobile Game developed in Unity and .NET is used at backend. The goal of game is to escape viruses and collect vaccine drops to save the countries, moving the proffesor.",
@@ -47,8 +49,13 @@ $(document).ready(function () {
     $(document).on('click', 'a.slide-to-link', function (event) {
         event.preventDefault();
 
+        if($("button.navbar-toggler").css("display") !== "none" && !$("button.navbar-toggler").hasClass("collapsed"))
+        {
+            $("button.navbar-toggler").trigger("click");
+        }
+
         var offsetTop = parseInt($($.attr(this, 'href')).css("margin-top"), 10);
-        offsetTop += parseInt($("#mainNav").css("height"), 10);
+        offsetTop += navSize;
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top - offsetTop
