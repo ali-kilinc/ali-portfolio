@@ -21,28 +21,34 @@
     
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto mt-4 mt-md-0 ml-5 ml-md-0">
-            <li class="nav-item">
-              <a class="nav-link slide-to-link" href="#aboutMe">ABOUT ME</a>
+            <li class="nav-item mx-1 mx-lg-3 mx-xl-4">
+              <a class="text-md-center nav-link slide-to-link" href="#aboutMe">ABOUT ME</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" target="_blank" href="assets/docs/Resume.pdf">RESUME</a>
+            <li class="nav-item mx-1 mx-lg-3 mx-xl-4">
+              <a class="text-md-center nav-link slide-to-link" href="#skills">SKILLS</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link slide-to-link" href="#contact">CONTACT</a>
+            <li class="nav-item mx-1 mx-lg-3 mx-xl-4">
+              <a class="text-md-center nav-link slide-to-link" href="#experience">EXPERIENCE</a>
+            </li>
+            <li class="nav-item mx-1 mx-lg-3 mx-xl-4">
+              <a class="text-md-center nav-link" target="_blank" href="assets/docs/Resume.pdf">RESUME</a>
+            </li>
+            <li class="nav-item mx-1 mx-lg-3 mx-xl-4">
+                <a class="text-md-center nav-link slide-to-link" href="#contact">CONTACT</a>
               </li>
           </ul>
         </div>
       </nav>
 
-    <section id="home" class="container-fluid">
-      <div id="greeting">
-        <h1>Hello, I'm <span id="myName">Ali Kılınç</span></h1>
-        <h3>a software engineer living in Ankara, Turkey.</h3>
-        <a href="#aboutMe" class="slide-to-link btn-portfolio">MORE ON ME</a>
-      </div>
-    </section>
+      <section id="home" class="d-flex justify-content-center">
+        <div id="greeting">
+          <h1>Hello, I'm <span id="myName">Ali Kılınç</span></h1>
+          <h3>a software engineer living in Ankara, Turkey.</h3>
+          <a href="#aboutMe" class="d-none  d-md-inline slide-to-link btn-portfolio">MORE ON ME</a>
+        </div>
+      </section>
 
-    <section id="aboutMe" class="container mt-5">      
+    <section id="aboutMe" class="container mt-3 mt-sm-4 mt-lg-5">      
       <h2 class="mb-3 mb-sm-4 mb-lg-5">About Me</h2>
       <div class="row align-items-center mb-sm-3 mb-lg-5">
         <div class="col-12 col-md-7">
@@ -52,8 +58,10 @@
             <p class="text-center">I'am a software engineer since 2009. I worked in various large-scale defense industry projects (C4ISR) for years. I am also interested in developing mobile and web applications and passionate about learning and using new technologies.<br><br><span id="currentFocus"><span id="currentFocusTitle">Current Focus : </span><span>Full-Stack Web Development</span></span></p>
         </div>  
       </div>
-      
-      <h2 class="sub-h2 mb-3 mb-sm-4">Skills</h2>
+    </section>
+
+    <section id="skills" class="container mt-3 mt-sm-4 mt-lg-5">
+      <h2 class="mb-3 mb-sm-4 mb-lg-5">Skills</h2>
       <div class="row px-5">
         <div class="col-4 col-md-3 col-lg-2 p-2 p-md-3 p-lg-4">
           <img src="assets/imgs/net.jpg">
@@ -115,9 +123,10 @@
           <h3 class="mt-3 text-center">mongoDb</h3>
         </div>
       </div>
-     
-      <section id="experience mb-3">
-        <h2 class="sub-h2 mb-3 mb-sm-4">Experience</h2>
+    </section>
+
+      <section id="experience" class="container mt-3 mt-sm-4 mt-lg-5">
+        <h2 class="mb-3 mb-sm-4 mb-lg-5">Experience</h2>
 
         <div class="card card-experience">
           <div class="card-body text-center">
@@ -167,70 +176,70 @@
               <p>Development of External System Communication, Meteorological and Fire Mission Modules. (Java SE, JNI (Java Native Interface))</p>
             </div>
           </div>
-      </section>
-      
-      <h2 class="sub-h2 mb-3 mb-sm-4 mb-lg-5">Projects Besides Work</h2>
-      <div class="row px-5 justify-content-center">
-        <div class="p-4 p-lg-2 col-12 col-md-6 col-lg-4">
-          <div class="project-container">
-            <img class="project-image" src="assets/imgs/yelpCamp.jpg">
-            <div class="project-overlay">
-              <p class="project-shortexp">Yelp Camp is a camping places web site.</p> 
-              <p class="project-tech">NodeJs / mongoDB</p>
-              <button id="learnMoreYelpCamp" class="btn-portfolio">LEARN MORE</button>
+          <div class="container">
+            <h3>Projects Besides Work</h3>
+            <div class="row px-5 justify-content-center">
+              <div class="p-4 p-lg-2 col-12 col-md-6 col-lg-4">
+                <div class="project-container">
+                  <img class="project-image" src="assets/imgs/yelpCamp.jpg">
+                  <div class="project-overlay">
+                    <p class="project-shortexp">Yelp Camp is a camping places web site.</p> 
+                    <p class="project-tech">NodeJs / mongoDB</p>
+                    <button id="learnMoreYelpCamp" class="btn-portfolio">LEARN MORE</button>
+                  </div>
+                </div>
+                <h3 class="mt-3 text-center">YelpCamp</h3>
+              </div>
+
+              <div class="p-4 p-lg-2 col-12 col-md-6 col-lg-4">
+                <div class="project-container">
+                  <img class="project-image" src="assets/imgs/outbreak.jpg">
+                  <div class="project-overlay">
+                    <p class="project-shortexp">2D Mobile Game available at <a class="a-light" href="https://play.google.com/store/apps/details?id=com.tuktuk.outbreak" target="_blank">Google Play</a></p> 
+                    <p class="project-tech">Unity / .NET</p>
+                    <button id="learnMoreOutbreak" class="btn-portfolio">LEARN MORE</button>
+                  </div>
+                </div>
+                <h3 class="mt-3 text-center">The Outbreak</h3>
+              </div>
+
+              <div class="p-4 p-lg-2 col-12 col-md-6 col-lg-4">
+                <div class="project-container">
+                  <img class="project-image" src="assets/imgs/portfolio.jpg">
+                  <div class="project-overlay">
+                    <p class="project-shortexp">A static, single page portfolio site.</p>
+                    <p class="project-tech">HTML / CSS / JS</p>
+                    <button id="learnMorePortfolio" class="btn-portfolio">LEARN MORE</a>
+                  </div>
+                </div>
+                <h3 class="mt-3 text-center">MK Portfolio</h3>
+              </div>
             </div>
           </div>
-          <h3 class="mt-3 text-center">YelpCamp</h3>
-        </div>
-
-        <div class="p-4 p-lg-2 col-12 col-md-6 col-lg-4">
-          <div class="project-container">
-            <img class="project-image" src="assets/imgs/outbreak.jpg">
-            <div class="project-overlay">
-              <p class="project-shortexp">2D Mobile Game available at <a class="a-light" href="https://play.google.com/store/apps/details?id=com.tuktuk.outbreak" target="_blank">Google Play</a></p> 
-              <p class="project-tech">Unity / .NET</p>
-              <button id="learnMoreOutbreak" class="btn-portfolio">LEARN MORE</button>
-            </div>
-          </div>
-          <h3 class="mt-3 text-center">The Outbreak</h3>
-        </div>
-
-        <div class="p-4 p-lg-2 col-12 col-md-6 col-lg-4">
-          <div class="project-container">
-            <img class="project-image" src="assets/imgs/portfolio.jpg">
-            <div class="project-overlay">
-              <p class="project-shortexp">A static, single page portfolio site.</p>
-              <p class="project-tech">HTML / CSS / JS</p>
-              <button id="learnMorePortfolio" class="btn-portfolio">LEARN MORE</a>
-            </div>
-          </div>
-          <h3 class="mt-3 text-center">MK Portfolio</h3>
-        </div>
-      </div>
-
-      <section id="contact" class="py-3">
-        <h2 class="mb-3 mb-sm-4 mb-lg-5">Contact</h2>
-        <p class="text-center light my-1">Feel free to contact me using the form below <i class="light far fa-smile-wink"></i></p>
-        <div class="container">
-          <form id="contact-form" method="POST">
-            <label for="name">Your Name</label>
-            <input type="text" id="name-input" name="name" placeholder="Your name...">
-            <label for="email">E-Mail Adress</label>
-            <input type="text" id="email-input" name="email" placeholder="Your e-mail adress...">
-            <label for="subject">Your Message</label>
-            <textarea id="subject-input" name="subject" placeholder="Anything you want to say..."></textarea>
-            <button class="mb-3 btn btn-send" type="submit">Send</button>
-            <div id="contact-success-message" class="alert alert-success" role="alert">Great! I've got your message. I'll
-              response you as soon as possible. Thank you <i class="fas fa-smile"></i></div>
-            <div id="contact-error-message" class="alert alert-danger" role="alert"></div>
-          </form>
-        </div>
       </section>
 
-      <div id="overlay">
-
-     </div>
+    
+    <section id="contact" class="container mt-3 mt-sm-4 mt-lg-5">
+      <h2 class="mb-3 mb-sm-4 mb-lg-5">Contact</h2>
+      <p class="text-center light my-1">Feel free to contact me using the form below <i class="light far fa-smile-wink"></i>
+      </p>
+      <form id="contact-form" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name-input" name="name" placeholder="Your name...">
+        <label for="email">E-Mail Adress</label>
+        <input type="text" id="email-input" name="email" placeholder="Your e-mail adress...">
+        <label for="subject">Your Message</label>
+        <textarea id="subject-input" name="subject" placeholder="Anything you want to say..."></textarea>
+        <button class="mb-3 btn btn-send" type="submit">Send</button>
+        <div id="contact-success-message" class="alert alert-success" role="alert">Great! I've got your message. I'll
+          response you as soon as possible. Thank you <i class="fas fa-smile"></i></div>
+        <div id="contact-error-message" class="alert alert-danger" role="alert"></div>
+      </form>
     </section>
+    
+    <div id="overlay">
+    
+    </div>
 
     <footer>
       <section class="container d-flex flex-column align-items-center py-3">

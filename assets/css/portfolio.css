@@ -1,19 +1,20 @@
 /* #region Mustard color underlined items */
-h2, .sub-h2, #currentFocusTitle {
+h2, #currentFocusTitle {
   border-bottom: 2px solid #e2ae48;
 }
 
 /* #endregion */
 /* shadowed items */
 img, .card-experience {
-  -webkit-box-shadow: 2px 2px 5px 0px #52616b;
-  -moz-box-shadow: 2px 2px 5px 0px #52616b;
-  box-shadow: 2px 2px 5px 0px #52616b;
+  -webkit-box-shadow: 2px 2px 5px 0px #2b2e5b;
+  -moz-box-shadow: 2px 2px 5px 0px #2b2e5b;
+  box-shadow: 2px 2px 5px 0px #2b2e5b;
 }
 
 body {
   font-family: "Dosis", sans-serif;
   background-color: #c9d6df;
+  color: #18163b;
 }
 
 h1 {
@@ -22,10 +23,6 @@ h1 {
 
 h2 {
   font-size: 2rem;
-}
-
-.sub-h2 {
-  font-size: 1.5rem;
 }
 
 h3 {
@@ -39,9 +36,6 @@ h3 {
   h2 {
     font-size: 2.5rem;
   }
-  .sub-h2 {
-    font-size: 2rem;
-  }
   h3 {
     font-size: 1.5rem;
   }
@@ -53,9 +47,6 @@ h3 {
   }
   h2 {
     font-size: 3rem;
-  }
-  .sub-h2 {
-    font-size: 2.5rem;
   }
   h3 {
     font-size: 2rem;
@@ -88,7 +79,7 @@ img {
 }
 
 .a-dark {
-  color: #52616b;
+  color: #2b2e5b;
   text-decoration: underline;
 }
 
@@ -98,17 +89,17 @@ a:hover {
 
 ::selection {
   color: #f0f5f9;
-  background-color: #1e2022;
+  background-color: #18163b;
 }
 
 ::-moz-selection {
   color: #f0f5f9;
-  background-color: #1e2022;
+  background-color: #18163b;
 }
 
 ::selection {
   color: #f0f5f9;
-  background-color: #1e2022;
+  background-color: #18163b;
 }
 
 /* #region Navigation Bar*/
@@ -118,11 +109,11 @@ a:hover {
 }
 
 .navbar.scrolled {
-  background-color: #52616b;
+  background-color: #2b2e5b;
 }
 
 .navbar-brand {
-  margin-right: 3rem;
+  margin-right: 1rem;
   margin-left: 1rem;
   color: #f0f5f9;
   font-weight: 400;
@@ -143,7 +134,6 @@ a:hover {
   color: #f0f5f9;
   min-width: 100px;
   transition: color .6s ease;
-  margin: 0.2rem 1.8rem;
 }
 
 .navbar-nav .nav-link:hover,
@@ -176,27 +166,32 @@ a:hover {
 /* #region Home Section*/
 #home {
   max-width: 100%;
+  width: 100%;
   height: 100vh;
   min-height: 600px;
-  background-image: url("../imgs/header_small.jpg");
-  background-size: cover;
+  background-image: url(../imgs/back-small.jpg);
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #f0f5f9;
+  padding: 20rem 0rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #home {
-    background-image: url("../imgs/header.jpg");
+    background-image: url(../imgs/back.jpg);
   }
 }
 
 #greeting {
-  position: absolute;
-  top: 60%;
-  left: 5%;
-  display: inline-block;
   text-align: center;
   line-height: 1.1rem;
+}
+
+#greeting h1,
+#greeting h3 {
+  text-shadow: 4px 4px #18163b;
 }
 
 #greeting h3 {
@@ -208,7 +203,7 @@ a:hover {
 }
 
 .btn-portfolio {
-  color: #1e2022;
+  color: #18163b;
   background-color: #e2ae48;
   border: solid 2px #e2ae48;
   border-radius: 0.5rem;
@@ -220,7 +215,7 @@ a:hover {
 .btn-portfolio:hover,
 .btn-portfolio:focus {
   border-color: #f0f5f9;
-  color: #52616b;
+  color: #2b2e5b;
   text-decoration: none;
 }
 
@@ -252,7 +247,7 @@ a:hover {
   text-align: center;
   transition: .5s ease;
   opacity: 0;
-  background-color: rgba(30, 32, 34, 0.8);
+  background-color: rgba(24, 22, 59, 0.8);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -334,14 +329,14 @@ a:hover {
 }
 
 .card-experience {
-  color: #52616b;
+  color: #2b2e5b;
   background-color: #f0f5f9;
   margin: 2rem 0;
 }
 
 .card-header {
   background-color: #e2ae48;
-  color: #1e2022;
+  color: #18163b;
 }
 
 input[type=text], input[type=email], textarea {
@@ -354,7 +349,7 @@ input[type=text], input[type=email], textarea {
   margin-bottom: 16px;
   resize: vertical;
   background-color: #f0f5f9;
-  color: #52616b;
+  color: #2b2e5b;
 }
 
 #subject-input {
@@ -362,9 +357,9 @@ input[type=text], input[type=email], textarea {
 }
 
 .btn-send {
-  color: #52616b;
+  color: #2b2e5b;
   background-color: #f0f5f9;
-  border-color: #52616b;
+  border-color: #2b2e5b;
 }
 
 #contact-success-message,
@@ -374,7 +369,7 @@ input[type=text], input[type=email], textarea {
 
 footer {
   width: 100%;
-  background-color: #52616b;
+  background-color: #2b2e5b;
   color: #e2ae48;
 }
 
