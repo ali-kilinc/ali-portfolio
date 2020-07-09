@@ -20,8 +20,8 @@ $(document).ready(function () {
         carouselItems: [
 
             '<div class="embed-responsive embed-responsive-16by9"><iframe id="outbreak-iframe" class="embed-responsive-item" src="https://www.youtube.com/embed/TD9HORgvo_w?enablejsapi=1"></iframe></div>',
-            '<img src="https://lh3.googleusercontent.com/VoJNXO9rQ0dRy1GSMhmoKNyKSWjtmVqkqpiLE_oYNFXBHGHxnpGD0je8tdZsdXdznJw=w1064-h969-rw" alt="">',
-            '<img src="https://lh3.googleusercontent.com/H4H2v_g1OU85TCB_hrKWOvtkpzOGVk0vT-O2KZrsuYpXUA8xHZ6BQalSDUn9Cotgcjk=w1920-h969-rw" alt="">'
+            '<img src="./assets/imgs/outbreak1.jpg" alt="">',
+            '<img src="./assets/imgs/outbreak2.jpg" alt="">'
         ]
     };
 
